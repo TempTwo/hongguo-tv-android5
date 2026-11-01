@@ -1,8 +1,9 @@
 #!/bin/bash
-# 自动检测电视 adb 端口并安装红果短剧 Android 5 (armv7a) 测试包
+# 自动检测电视 adb 端口并安装红果短剧 Android 5 (armv7a) 正式版
 IP="192.168.0.9"
-APK="/Users/xu/Documents/deepseek-harness/default-workspace/hongguo-tv-releases/apk/hongguo-tv-android5-test.1-arm32.apk"
-LOG="/Users/xu/Documents/deepseek-harness/default-workspace/hongguo-tv-releases/apk/adb-watch.log"
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+APK="$SCRIPT_DIR/../apk/hongguo-tv-android5-arm32.apk"
+LOG="$SCRIPT_DIR/adb-watch.log"
 PORTS="5555 5556 12345 55555"
 PKG="rocks.aston.hongguotv.android5test"
 ACT="rocks.aston.hongguotv.MainActivity"

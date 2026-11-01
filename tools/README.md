@@ -14,7 +14,7 @@ ssh -N -o ServerAliveInterval=30 -o ServerAliveCountMax=3 \
 adb connect 127.0.0.1:5555
 
 # 3. 安装
-adb -s 127.0.0.1:5555 install -r hongguo-tv-android5-test.1-arm32.apk
+adb -s 127.0.0.1:5555 install -r hongguo-tv-android5-arm32.apk
 
 # 4. 启动
 adb -s 127.0.0.1:5555 shell am start -n rocks.aston.hongguotv.android5test/rocks.aston.hongguotv.MainActivity

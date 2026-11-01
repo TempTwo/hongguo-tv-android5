@@ -1,10 +1,10 @@
-# 红果短剧 TV · Android 5 适配版（armv7a）
+# 红果短剧 TV · Android 5 正式版（armv7a）
 
 > 本仓库是 [aston314/hongguo-tv-releases](https://github.com/aston314/hongguo-tv-releases) 的
 > **Android 5 适配镜像**，原作者为 **aston314**，应用版权与全部权利归原作者所有。
 >
 > 上游仓库为**纯发布仓库**（只放 APK 与更新清单，源码在作者私有仓库），因此本仓库**不包含、也无法提供源码**。
-> 这里仅镜像上游已发布的 **Android 5（API 21）/ armeabi-v7a** 测试包，并补充实机验证记录与安装说明。
+> 这里仅镜像上游已发布的 **Android 5（API 21）/ armeabi-v7a** 适配包，并补充实机验证记录与安装说明。
 
 ---
 
@@ -13,7 +13,7 @@
 [红果短剧](https://github.com/aston314/hongguo-tv-releases) 是面向 Android TV 的短剧播放应用。
 正式版最低要求 **Android 6 / API 23**，在 Android 5.0 / 5.1 的老设备上无法安装。
 
-上游在 `android5-compat-0.2.136-test.1` 预发布中提供了从源码**面向 API 21 重建**的测试包
+上游在 `android5-compat-0.2.136-test.1` 预发布中提供了从源码**面向 API 21 重建**的适配包
 （不是改 Manifest 后重签）。本仓库把其中的 **armeabi-v7a（armv7a）** 版本镜像过来，
 方便 Android 5 的 32 位 ARM 设备直接下载安装。
 
@@ -23,12 +23,12 @@ Releases 页提供可直接安装的 APK：
 
 | 文件 | 说明 |
 | --- | --- |
-| `hongguo-tv-android5-test.1-arm32.apk` | **armv7a（32 位 ARM）专用**，minSdk 21 |
-| `hongguo-tv-android5-test.1.apk` | 通用包（arm64-v8a / armeabi-v7a / x86_64） |
+| `hongguo-tv-android5-arm32.apk` | **armv7a（32 位 ARM）专用**，minSdk 21 |
+| `hongguo-tv-android5.apk` | 通用包（arm64-v8a / armeabi-v7a / x86_64） |
 
 - 包名 `rocks.aston.hongguotv.android5test`，版本 `0.2.136-android5-test.1`
 - `minSdk 21`（Android 5.0+） / `targetSdk 35`，签名与上游一致
-- 应用名称「红果短剧 · Android 5 测试」，可与正式版共存
+- 应用显示名「红果短剧 · Android 5 测试」（上游构建名，APK 未修改故保留），与官方包 `rocks.aston.hongguotv` 可共存
 
 ## 与上游的关系
 
@@ -52,8 +52,8 @@ Releases 页提供可直接安装的 APK：
 
 ## 安装
 
-1. 在 Releases 下载 `hongguo-tv-android5-test.1-arm32.apk`；
-2. `adb install -r hongguo-tv-android5-test.1-arm32.apk`（或 U 盘侧载）；
+1. 在 Releases 下载 `hongguo-tv-android5-arm32.apk`；
+2. `adb install -r hongguo-tv-android5-arm32.apk`（或 U 盘侧载）；
 3. 启动「红果短剧 · Android 5 测试」。
 
 如果电脑无法直连电视（例如路由器开启了无线客户端隔离、`adb connect 192.168.0.9` 报
