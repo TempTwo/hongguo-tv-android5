@@ -1,2 +1,2 @@
-7c515253f78e4fc24d5afec49982f3d10927ae073dc6823eace45122e8aab10b  hongguo-tv-android5-arm32.apk
-5b8a97677d150a5150debd230c7db7359aeefa5c9e80668d195f6a0d19ed2e03  hongguo-tv-android5.apk
+1eaa36c2e78fc95609da33fdc7f2dab7b760493bd09b40670808ab76d934b1dd  hongguo-tv-android5-arm32.apk
+d54614ef436efca19b9615bfe224600f422b5a9a967dccee6786e5f69cfa1dc3  hongguo-tv-android5.apk
